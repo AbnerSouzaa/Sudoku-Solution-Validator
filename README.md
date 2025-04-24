@@ -27,4 +27,4 @@ This project implements a **Sudoku Solution Validator** to check if a given Sudo
     ```
 
 ### Acknowledgments:
-- This project was developed by [Your Name].
+- This project was developed by Abner Souza, Gabriel Rafá e José Artur.
