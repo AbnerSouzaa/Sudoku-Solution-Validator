@@ -7,6 +7,8 @@ WORKDIR /app
 # Copie todos os arquivos do repositório para dentro do container
 COPY . .
 
+COPY sudoku.txt /app/sudoku.txt
+
 # Instale as dependências necessárias 
 RUN apt-get update && apt-get install -y make
 
