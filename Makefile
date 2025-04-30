@@ -1,11 +1,13 @@
-# Simple Makefile to build the project
 CC = g++
 CFLAGS = -std=c++11 -Wall
+SRC = src/main.cpp src/sudoku_validator.cpp
+OBJ = $(SRC:.cpp=.o)
+EXEC = sudoku_validator
 
-all: sudoku_validator
+all: $(EXEC)
 
-sudoku_validator: src/main.cpp
-	$(CC) $(CFLAGS) src/main.cpp -o sudoku_validator
+$(EXEC): $(SRC)
+	$(CC) $(CFLAGS) $(SRC) -o $(EXEC)
 
 clean:
-	rm -f sudoku_validator
+	rm -f $(EXEC) *.o
